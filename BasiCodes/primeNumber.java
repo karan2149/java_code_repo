@@ -2,6 +2,10 @@ package BasiCodes;
 
 import java.util.*;
 
+/*
+ * Program to find prime number upto Nth term and find a number prime or not
+ * @Author- Karan Kumar
+ */
 public class primeNumber {
     static Scanner sc = new Scanner(System.in);
 

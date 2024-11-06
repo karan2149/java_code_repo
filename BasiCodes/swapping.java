@@ -5,6 +5,7 @@ import java.util.*;
 /*
  * This program include swapping of two numbers and 
  * two string as well with or without using third variable
+ * @Author- Karan Kumar
  */
 public class swapping {
     static Scanner sc = new Scanner(System.in);
