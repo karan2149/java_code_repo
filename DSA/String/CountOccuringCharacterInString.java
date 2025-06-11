@@ -58,6 +58,7 @@ public class CountOccuringCharacterInString {
                 System.out.println(keyString + " = " + map.get(keyString));
             }
         }
+        
     }
 
     public static void countOccuringWord(String str) {

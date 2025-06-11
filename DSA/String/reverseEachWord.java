@@ -7,7 +7,7 @@ import java.util.*;
  * @Author- Karan Kumar
  * Time complexity O(n*m)
  */
-public class reverseEachWord {
+public class ReverseEachWord {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string");
