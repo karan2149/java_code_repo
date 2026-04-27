@@ -1,5 +1,7 @@
 package WBACodingQuestion;
 
+//DONE
+
 import java.util.*;
 /*
 i=1:  weights[1] = (1+2) × weights[0] = 3  × 1   = 3
@@ -85,13 +87,16 @@ index:  0  1  2  3  4 ... 25
 letter: A  B  C  D  E ... Z
 
 javaweights[0] = 1; // A
+
 Base case. A = 1 by definition.
 weights = [1, 0, 0, 0, 0, ... 0]
            A
 
+
 javafor (int i = 1; i < 26; i++) {
     weights[i] = (i + 2) * weights[i - 1];
 }
+
 Fill weights for B to Z using the formula.
 Why (i+2)?
 i=1 (B): multiplier = 1+2 = 3  → B = 3  × A = 3  × 1  = 3
@@ -126,7 +131,7 @@ i=2  → C
 i=1  → B
 i=0  → A (smallest, try last)
 
-javaif (weights[i] <= weight) {
+java if (weights[i] <= weight) {
 Only use this letter if its weight fits within remaining weight.
 weight=25, i=3 (D): weights[3]=60
   60 <= 25? NO → skip D
@@ -149,7 +154,7 @@ Subtract the total weight used by these letters from remaining.
 weight = 25 - 2×12 = 25 - 24 = 1
 
 Step 3 — Build String
-javaStringBuilder result = new StringBuilder();
+java StringBuilder result = new StringBuilder();
 for (int i = 0; i < 26; i++) {
 Now loop from A (index 0) UP to Z (index 25).
 Why forward this time? Because appending A before B before C gives alphabetically smallest string automatically — no sorting needed.

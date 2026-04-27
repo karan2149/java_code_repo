@@ -2,6 +2,8 @@ package WBACodingQuestion;
 
 import java.util.*;
 
+//DONE
+
 /*
 Step 1: [10, 20, 7]  → max=20 → 20/2=10 → [10, 10, 7]
 Step 2: [10, 10, 7]  → max=10 → 10/2=5  → [5, 10, 7]

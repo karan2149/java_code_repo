@@ -1,5 +1,8 @@
 package WBACodingQuestion;
 import java.util.*;
+
+// DONE --------
+
 /*
 Maria's deck:   [2, 1, 3]
 Andrea's deck:  [1, 2, 3]
@@ -32,7 +35,6 @@ public class FindTheWinner {
         // Even → start at 0, Odd → start at 1
         int start = dieRoll.equalsIgnoreCase("Odd") ? 1 : 0;
 
-        // Friend's approach — single score variable
         // positive → Andrea ahead
         // negative → Maria ahead
         // zero     → Tie

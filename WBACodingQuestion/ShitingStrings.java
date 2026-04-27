@@ -1,4 +1,7 @@
 package WBACodingQuestion;
+
+//DONE 
+
 /*
 PS:  s = "abcdefg",  leftShifts = 2,  rightShifts = 4
 
@@ -29,7 +32,7 @@ public class ShitingStrings {
 
 /*
     int netShift = ((rightShifts - leftShifts) % n + n) % n;
-    This is the core of the entire solution. Let's break it into sub-steps:
+
     rightShifts - leftShifts
     Left and right shifts are opposites — they cancel each other out. Subtracting gives the net direction and magnitude.
 
@@ -49,7 +52,8 @@ public class ShitingStrings {
 
 /*
 return s.substring(n - netShift) + s.substring(0, n - netShift);
-This single line performs the entire rotation. Here's why it works:
+This single line performs the entire rotation. 
+Here's why it works:
 A right shift by k positions means the last k characters jump to the front:
 "abcdefg",  k=2
 
